@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../../../shared/components/button';
+
+import Button from '@components/ui/Button';
 
 const Intro = () => {
   return (

@@ -17,10 +17,10 @@ const Header = () => {
 const Nav = () => {
   return (
     <nav className='flex items-center'>
-      {NavItems.map((navItem) => {
+      {NavItems.map((navItem, i) => {
         return (
-          <li className='list-none px-8'>
-            <a className='font-light cursor-pointer no-underline border-b border-white hover:border-black'>
+          <li key={i} className='list-none px-8'>
+            <a className='font-light cursor-pointer no-underline border-b hover:border-black'>
               {navItem}
             </a>
           </li>

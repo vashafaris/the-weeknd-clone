@@ -13,6 +13,10 @@ module.exports = {
       ...theme('colors'),
       intro: '#303030',
     }),
+    borderColor: (theme) => ({
+      ...theme('colors'),
+      DEFAULT: '#F2F2F2',
+    }),
     extend: {},
   },
   variants: {

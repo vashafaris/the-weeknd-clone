@@ -1,8 +1,12 @@
 import React from 'react';
-import Header from '../header';
+import Header from '../Header';
 
 const Body = ({ children }) => {
-  return <main className='relative top-12 px-16 h-full'>{children}</main>;
+  return (
+    <main className='relative top-12 px-16 h-full bg-background'>
+      {children}
+    </main>
+  );
 };
 
 const Layout = ({ children }) => {

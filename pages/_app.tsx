@@ -1,5 +1,5 @@
-import 'tailwindcss/tailwind.css';
 import Head from 'next/head';
+import '@assets/main.css';
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,6 +1,6 @@
 const Button = ({ children }) => {
   return (
-    <button className='bg-white border border-black w-48 p-2'>
+    <button className='border border-black w-48 font-light text-sm p-1 tracking-widest'>
       {children}
     </button>
   );
