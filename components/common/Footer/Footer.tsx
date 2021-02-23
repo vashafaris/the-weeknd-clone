@@ -1,5 +1,31 @@
+import { FooterLinks, SocialMedias } from './footer.constant';
+
 const Footer = () => {
-  return <div>footer</div>;
+  return (
+    <footer className='relative px-16 py-8 flex flex-col justify-around items-center h-56'>
+      <div className='flex'>
+        {SocialMedias.map((socialMedia) => {
+          return (
+            <a className='px-4'>
+              <img
+                className='h-4 cursor-pointer'
+                src={`svg/${socialMedia}.svg`}
+                alt=''
+              />
+            </a>
+          );
+        })}
+      </div>
+
+      <div>
+        <nav className='flex'>
+          {FooterLinks.map((footerLink) => {
+            return <a className='text-xs px-4 font-light'>{footerLink}</a>;
+          })}
+        </nav>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

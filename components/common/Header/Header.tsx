@@ -2,7 +2,7 @@ import { NavItems } from './header.constant';
 
 const Header = () => {
   return (
-    <header className='fixed h-12 w-full top-0 px-16 flex justify-between items-center border-b border-black z-50'>
+    <header className='fixed h-12 w-full top-0 px-16 flex justify-between items-center border-b border-black z-50 bg-background'>
       <div className='flex'>
         <img className='w-40' src='png/logo.png' alt='' />
       </div>

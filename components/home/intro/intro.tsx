@@ -4,14 +4,12 @@ import Button from '@components/ui/Button';
 
 const Intro = () => {
   return (
-    <section className='h-screen flex justify-center items-center'>
-      <div className='flex flex-col w-6/12 justify-start'>
-        <h2 className='text-9xl font-bold absolute top-1/4 text-intro'>
-          AFTER HOURS
-        </h2>
+    <section className='relative h-screen flex justify-end items-center'>
+      <div className='absolute flex flex-col w-full justify-center'>
+        <h2 className='text-8xl font-bold text-intro'>AFTER HOURS</h2>
         <Button>STREAM/DOWNLOAD</Button>
       </div>
-      <div className='flex'>
+      <div className='flex w-8/12 justify-self-end'>
         <img className='h-4/5' src='jpg/intro.jpg' alt='cover album' />
       </div>
     </section>

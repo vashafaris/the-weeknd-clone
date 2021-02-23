@@ -1,10 +1,11 @@
 import Layout from '@components/common/Layout';
-import { Intro } from '@components/home';
+import { Intro, MusicVideo } from '@components/home';
 
 const Home = () => {
   return (
     <Layout>
       <Intro />
+      <MusicVideo />
     </Layout>
   );
 };
