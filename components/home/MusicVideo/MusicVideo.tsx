@@ -1,5 +1,5 @@
 import React from 'react';
-import { MusicVideoLinks } from './MusicVideo.constant';
+import { MusicVideoLinks } from './music-video.constant';
 
 const MusicVideo = () => {
   return (

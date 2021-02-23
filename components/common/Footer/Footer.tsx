@@ -6,7 +6,7 @@ const Footer = () => {
       <div className='flex'>
         {SocialMedias.map((socialMedia) => {
           return (
-            <a className='px-4'>
+            <a className='px-4' key={socialMedia}>
               <img
                 className='h-4 cursor-pointer'
                 src={`svg/${socialMedia}.svg`}
@@ -20,7 +20,11 @@ const Footer = () => {
       <div>
         <nav className='flex'>
           {FooterLinks.map((footerLink) => {
-            return <a className='text-xs px-4 font-light'>{footerLink}</a>;
+            return (
+              <a className='text-xs px-4 font-light' key={footerLink}>
+                {footerLink}
+              </a>
+            );
           })}
         </nav>
       </div>
