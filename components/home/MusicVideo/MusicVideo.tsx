@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { MusicVideoLinks } from './music-video.constant';
 
-const MusicVideo = () => {
+const MusicVideo: FC = () => {
   return (
     <section className='relative'>
       {MusicVideoLinks.map((musicVideoLink) => {

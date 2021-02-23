@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import Button from '@components/ui/Button';
 
-const Intro = () => {
+const Intro: FC = () => {
   return (
     <section className='relative h-screen flex justify-end items-center'>
       <div className='absolute flex flex-col w-full justify-center'>
