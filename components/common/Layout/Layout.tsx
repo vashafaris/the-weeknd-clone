@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
+
 import Footer from '../Footer';
 import Header from '../Header';
 
-const Container = ({ children }) => {
+interface Props {
+  children: ReactNode;
+}
+
+const Container: FC<Props> = ({ children }) => {
   return (
     <div className='relative w-full min-h-screen bg-background'>{children}</div>
   );
 };
 
-const Body = ({ children }) => {
+const Body: FC<Props> = ({ children }) => {
   return (
     <main className='relative top-12 px-16 bg-background'>{children}</main>
   );
 };
 
-const Layout = ({ children }) => {
+const Layout: FC<Props> = ({ children }) => {
   return (
     <Container>
       <Header />
