@@ -1,18 +1,21 @@
-import Button from '@components/ui/Button';
 import React, { FC } from 'react';
+import cn from 'classnames';
+
+import Button from '@components/ui/Button';
 
 interface Props {
+  className?: string;
   type: string;
   title: string;
   imgSrc: string;
 }
 
-const CoverCard: FC<Props> = ({ type, title, imgSrc }) => {
+const CoverCard: FC<Props> = ({ className, type, title, imgSrc }) => {
   return (
-    <div>
+    <div className={cn('mb-8', className)}>
       <img src={imgSrc} alt='' />
-      <p className='text-sm font-light leading-loose'>{type}</p>
-      <h1 className='text-lg font-bold leading-loose'>{title}</h1>
+      <p className='text-sm font-light mt-4'>{type}</p>
+      <h1 className='text-lg font-bold mb-2'>{title}</h1>
       <Button>Listen</Button>
     </div>
   );
