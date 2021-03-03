@@ -8,7 +8,7 @@ const MusicVideo: FC = () => {
         return (
           <div className='' key={musicVideoLink}>
             <iframe
-              className='w-full h-screen mb-12'
+              className='w-full mb-12 h-screen'
               src={musicVideoLink}
             ></iframe>
           </div>

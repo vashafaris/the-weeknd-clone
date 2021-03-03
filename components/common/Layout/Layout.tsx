@@ -14,9 +14,7 @@ const Container: FC<Props> = ({ children }) => {
 };
 
 const Body: FC<Props> = ({ children }) => {
-  return (
-    <main className='relative top-12 px-16 bg-background'>{children}</main>
-  );
+  return <main className='relative top-12 bg-background'>{children}</main>;
 };
 
 const Layout: FC<Props> = ({ children }) => {

@@ -1,12 +1,16 @@
+import { FC } from 'react';
+
 import Layout from '@components/common/Layout';
 import { Intro, MusicCover, MusicVideo } from '@components/home';
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <Layout>
-      <Intro />
-      <MusicVideo />
-      <MusicCover />
+      <div className='px-16'>
+        <Intro />
+        <MusicVideo />
+        <MusicCover />
+      </div>
     </Layout>
   );
 };
