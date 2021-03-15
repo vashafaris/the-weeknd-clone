@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 
-import Button from '@components/ui/Button';
 import { CoverCard } from '@components/common';
 
 const MusicCover: FC = () => {
@@ -13,7 +12,7 @@ const MusicCover: FC = () => {
           imgSrc='jpg/album-cover.jpg'
         />
       </div>
-      <div className='relative flex flex-1 flex-wrap justify-center'>
+      <div className='relative flex flex-1 flex-wrap justify-between'>
         <CoverCard
           className='w-2/5 mr-4'
           type='SINGLE'

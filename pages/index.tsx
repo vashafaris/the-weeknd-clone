@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 import Layout from '@components/common/Layout';
-import { Intro, MusicCover, MusicVideo } from '@components/home';
+import { Intro, MusicCover, MusicVideo, Shop } from '@components/home';
 
 const Home: FC = () => {
   return (
@@ -10,6 +10,7 @@ const Home: FC = () => {
         <Intro />
         <MusicVideo />
         <MusicCover />
+        <Shop />
       </div>
     </Layout>
   );

@@ -13,7 +13,7 @@ interface Props {
 const CoverCard: FC<Props> = ({ className, type, title, imgSrc }) => {
   return (
     <div className={cn('mb-8', className)}>
-      <img src={imgSrc} alt='' />
+      <img src={imgSrc} />
       <p className='text-sm font-light mt-4'>{type}</p>
       <h1 className='text-lg font-bold mb-2'>{title}</h1>
       <Button>Listen</Button>
