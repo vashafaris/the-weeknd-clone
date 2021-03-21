@@ -17,7 +17,11 @@ module.exports = {
       ...theme('colors'),
       DEFAULT: '#F2F2F2',
     }),
-    extend: {},
+    extend: {
+      width: {
+        'fit-content': 'fit-content',
+      },
+    },
   },
   variants: {
     extend: {},

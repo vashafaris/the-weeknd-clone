@@ -6,7 +6,7 @@ interface Props {
 
 const Button: FC<Props> = ({ children }) => {
   return (
-    <button className='border border-black w-48 font-light text-sm p-1 tracking-widest'>
+    <button className='inline-block w-fit-content border border-black font-light text-sm p-1 pl-4 pr-4 tracking-widest'>
       {children}
     </button>
   );
