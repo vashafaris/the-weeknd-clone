@@ -21,7 +21,10 @@ const Footer = () => {
         <nav className='flex relative'>
           {FooterLinks.map((footerLink) => {
             return (
-              <a className='text-xs px-4 font-light' key={footerLink}>
+              <a
+                className='text-xs px-4 font-light cursor-pointer'
+                key={footerLink}
+              >
                 {footerLink}
               </a>
             );

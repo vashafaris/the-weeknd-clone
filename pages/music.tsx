@@ -28,6 +28,8 @@ const Music: FC = () => {
               title={music.title}
               imgSrc={music.imgSrc}
               key={index}
+              hasSpotify={music.hasSpotify}
+              hasItunes={music.hasItunes}
             />
           );
         })}
