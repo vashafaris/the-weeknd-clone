@@ -5,14 +5,14 @@ import { CoverCard } from '@components/common';
 const MusicCover: FC = () => {
   return (
     <section className='relative min-h-screen flex mb-16'>
-      <div className='relative flex flex-1'>
+      <div className='relative flex flex-1 mr-4'>
         <CoverCard
           type='ALBUM'
           title='THE HIGHLIGHTS'
           imgSrc='jpg/album-cover.jpg'
         />
       </div>
-      <div className='relative flex flex-1 flex-wrap justify-between'>
+      <div className='relative flex flex-1 flex-wrap justify-around'>
         <CoverCard
           className='w-2/5 mr-4'
           type='SINGLE'
