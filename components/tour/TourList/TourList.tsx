@@ -27,12 +27,13 @@ const TourItem: FC<TourItemProps> = ({ date, location, place }) => {
 const TourList = () => {
   return (
     <section className='relative px-16 mb-8'>
-      {TourLists.map((tour) => {
+      {TourLists.map((tour, index) => {
         return (
           <TourItem
             date={tour.date}
             location={tour.location}
             place={tour.place}
+            key={index}
           />
         );
       })}

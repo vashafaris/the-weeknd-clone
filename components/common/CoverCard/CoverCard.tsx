@@ -3,14 +3,14 @@ import cn from 'classnames';
 
 import Button from '@components/ui/Button';
 
-interface Props {
-  className?: string;
+interface CoverCardProps {
   type: string;
   title: string;
   imgSrc: string;
+  className?: string;
 }
 
-const CoverCard: FC<Props> = ({ className, type, title, imgSrc }) => {
+const CoverCard: FC<CoverCardProps> = ({ className, type, title, imgSrc }) => {
   return (
     <div className={cn('mb-8', className)}>
       <img src={imgSrc} />
