@@ -5,10 +5,12 @@ import React, { FC } from 'react';
 
 const Tour: FC = () => {
   return (
-    <Layout>
-      <TourCover />
-      <TourList />
-    </Layout>
+    <>
+      <Layout>
+        <TourCover />
+        <TourList />
+      </Layout>
+    </>
   );
 };
 
