@@ -1,8 +1,12 @@
-import { Layout } from "@components/common";
-import React, { FC } from "react";
+import { Layout } from '@components/common';
+import React, { FC } from 'react';
 
 const Videos: FC = () => {
-  return <Layout>videos</Layout>;
+  return (
+    <>
+      <Layout>videos</Layout>
+    </>
+  );
 };
 
 export default Videos;
